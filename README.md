@@ -4,7 +4,7 @@ Apuokas
 Edukacinis lietuvių kalbos žaidimas - Apuokas
 
 
-Direktorijų struktūra
+# Direktorijų struktūra
 ======
 
 
@@ -18,15 +18,5 @@ Direktorijų struktūra
     | index.html            // Pradinis apps'o template'as
 
 
-# GitLab directory structure
 
-This is the directory structure you will end up with following the instructions in the Installation Guide.
-
-    |-- home
-    |   |-- git
-    |       |-- .ssh
-    |       |-- gitlab
-    |       |-- gitlab-satellites
-    |       |-- gitlab-shell
-    |       |-- repositories
 
