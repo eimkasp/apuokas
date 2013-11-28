@@ -1,13 +1,13 @@
 <!doctype html>
 <html class="no-js" ng-app="apuokasApp" lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Apuokas</title>
-    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/foundation.css"/>
     <script src="jslib/modernizr.js"></script>
 </head>
-<body>
+<body ng-controller="homeCtrl">
 <header>
     <div class="row">
         <div class="large-12 columns">
@@ -15,10 +15,37 @@
         </div>
     </div>
 </header>
-<script src="jslib/jquery.js"></script>
-<script src="jslib/foundation.min.js"></script>
-<script src="js/index.js"></script>
+{{hello}}
+Search: <input ng-model="query">
+Sort by:
+<select ng-model="orderProp">
+    <option value="name">Alphabetical</option>
+    <option value="age">Newest</option>
+</select>
+<ul>
+    <li ng-repeat="raide in zodziai track by $id(raide.raides) | filter:query | orderBy:orderProp">
+      <!--<div ng-repeat="raide in zodis.raides"> {{raide}}</div>-->
+        <!--<div ng-repeat=""></div>-->
+       {{raide}}
+    </li>
+</ul>
+Raidziu kiekis {{raides.length}}
+<div class="row">
+    <div class="view-container">
+        <div ng-view class="view-frame"></div>
+    </div>
+</div>
 
+<script src="jslib/jquery.js"></script>
+<script src="jslib/angular.js"></script>
+<script src="jslib/angular-route.js"></script>
+<script src="jslib/foundation.min.js"></script>
+<script src="index.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.3/angular-resource.min.js"></script>
+<script src="https://cdn.firebase.com/v0/firebase.js"></script>
+<script src="http://firebase.github.io/angularFire/angularFire.js"></script>
+<script src="views/home.js"></script>
+<!--<script src="views/project.js"></script>-->
 <script>
     $(document).foundation();
 </script>
