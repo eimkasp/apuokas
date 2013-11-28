@@ -5,8 +5,6 @@ Edukacinis lietuvių kalbos žaidimas - Apuokas
 
 
 # Direktorijų struktūra
-======
-
 
     |-- root
     |   |-- controllers     // AngularJS controlleriu failai
