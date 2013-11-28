@@ -3,15 +3,6 @@ apuokasApp.controller('listCtrl', ['$scope', function ($scope) {
         "irasai":
             [
                 {
-                    "zodis":{zodis: "bama"},
-                    "raides":[
-                        {"id":0, "title":"b"},
-                        {"id":1, "title":"a"},
-                        {"id":2, "title":"m"},
-                        {"id":3, "title":"a"}]
-                },
-
-                {
                     "zodis":{"zodis" : "tes"},
                     "raides":[
                         {"id":0, "title":"t"},
@@ -19,7 +10,6 @@ apuokasApp.controller('listCtrl', ['$scope', function ($scope) {
                         {"id":2,"title":"t"},
                         {"id":3,"title":"i"},
                         {"id":4,"title":"s"},
-
                     ]
                 },
 
@@ -32,9 +22,20 @@ apuokasApp.controller('listCtrl', ['$scope', function ($scope) {
                         {"id":3,"title":"t"},
                         {"id":4,"title":"u"},
                         {"id":5,"title":"s"},
-
                     ]
-                }
+                },
+                {
+                    "zodis":{"zodis" : "ąžuolas"},
+                    "raides":[
+                        {"id":0, "title":"ą"},
+                        {"id":1,"title":"ž"},
+                        {"id":2,"title":"u"},
+                        {"id":3,"title":"o"},
+                        {"id":4,"title":"l"},
+                        {"id":5,"title":"a"},
+                        {"id":6,"title":"s"},
+                    ]
+                },
             ]
     };
 

@@ -9,20 +9,20 @@
             <option value="zodynas.irasai.length">ilgiausias</option>
         </select>
     </div>
-
     <div>
         Zodziu kiekis: {{zodynas.irasai.length}}
     </div>
-    <div class="row">
+    <div class="row word_list">
         <ul class="" ng-repeat="zodziai in zodynas.irasai | filter: query |orderBy: filtras">
             <li>
                 <ul>
                     <li ng-repeat="zodis in zodziai.zodis">
                         <h4>{{zodis}}</h4>
+                        <div class="expandable" ng-repeat="raide in zodis">{{raide}}</div>
+
                     </li>
                 </ul>
             </li>
         </ul>
-
     </div>
 </div>
