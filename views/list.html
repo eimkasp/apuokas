@@ -16,10 +16,9 @@
         <ul class="" ng-repeat="zodziai in zodynas.irasai | filter: query |orderBy: filtras">
             <li>
                 <ul>
-                    <li ng-repeat="zodis in zodziai.zodis">
+                    <li class="word_expand" ng-repeat="zodis in zodziai.zodis" ng-click="showDetails = ! showDetails" >
                         <h4>{{zodis}}</h4>
-                        <div class="expandable" ng-repeat="raide in zodis">{{raide}}</div>
-
+                        <div class="expandable" ng-show="showDetails" ng-repeat="raide in zodis">{{raide}}</div>
                     </li>
                 </ul>
             </li>

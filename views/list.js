@@ -12,7 +12,6 @@ apuokasApp.controller('listCtrl', ['$scope', function ($scope) {
                         {"id":4,"title":"s"},
                     ]
                 },
-
                 {
                     "zodis":{"zodis": "alytus"},
                     "raides":[
@@ -27,7 +26,7 @@ apuokasApp.controller('listCtrl', ['$scope', function ($scope) {
                 {
                     "zodis":{"zodis" : "ąžuolas"},
                     "raides":[
-                        {"id":0, "title":"ą"},
+                        {"id":0,"title":"ą"},
                         {"id":1,"title":"ž"},
                         {"id":2,"title":"u"},
                         {"id":3,"title":"o"},
@@ -38,7 +37,6 @@ apuokasApp.controller('listCtrl', ['$scope', function ($scope) {
                 },
             ]
     };
-
     $scope.zodynas = json;
     $scope.hello = "Hello, world";
 }]);
