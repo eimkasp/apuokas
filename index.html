@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Apuokas</title>
     <link rel="stylesheet" href="css/foundation.css"/>
+    <link rel="stylesheet" href="css/main.css"/>
+
     <script src="jslib/modernizr.js"></script>
 </head>
 <body ng-controller="homeCtrl">
@@ -16,15 +18,19 @@
     </div>
 </header>
 <div class="row">
-    {{hello}}
-    Search: <input ng-model="query">
-    Sort by:
-    <select ng-model="filtras">
-        <option value="zodis.zodis">Alphabetical</option>
-        <option value="zodynas.irasai.length">ilgiausias</option>
-    </select>
+    <div>{{hello}}</div>
+    <div>Filtruoti: <input ng-model="query"></div>
+    <div class="filter">
+        Rikiuoti:
+        <select ng-model="filtras">
+            <option value="zodis.zodis">Alphabetical</option>
+            <option value="zodynas.irasai.length">ilgiausias</option>
+        </select>
+    </div>
 
-    zodziu kiekis {{zodynas.modules.length}}
+    <div>
+        zodziu kiekis: {{zodynas.irasai.length}}
+    </div>
     <div class="row">
         <ul class="" ng-repeat="zodziai in zodynas.irasai | filter: query |orderBy: filtras">
             <li>
