@@ -11,9 +11,15 @@ apuokasApp.config(['$routeProvider',
                 templateUrl: 'views/list.html',
                 controller: 'listCtrl'
             }).
+            when('/mode1', {
+                templateUrl: 'views/mode1.html',
+                controller: 'oneCtrl'
+            }).
             otherwise({
                 redirectTo: '/home'
             });
     }]);
 
-var apuokasAppCtrl = angular.module('apuokasAppCtrl', [], function(){});
+var apuokasAppCtrl = angular.module('apuokasAppCtrl', [], function(){
+});
+
