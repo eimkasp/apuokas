@@ -23,14 +23,23 @@ Sort by:
     <option value="age">Newest</option>
 </select>
 <ul>
-    <li ng-repeat="raide in zodziai track by $id(raide.raides) | filter:query | orderBy:orderProp">
-      <!--<div ng-repeat="raide in zodis.raides"> {{raide}}</div>-->
-        <!--<div ng-repeat=""></div>-->
-       {{raide}}
-    </li>
 </ul>
-Raidziu kiekis {{raides.length}}
+Raidziu kiekis {{modules.length}}
 <div class="row">
+    <table class="table table-bordered" ng-repeat="module in ocw.modules">
+        <tr>
+            <td>
+                <h3 class="moduletitle">{{ module.title }}</h3>
+                <h4>Zodis</h4>
+                <p>{{ module.zodis }}</p>
+            </td>
+        </tr>
+        <tr ng-repeat="week in module.raides">
+            <td>
+                {{ week.title }}
+            </td>
+        </tr>
+    </table>
     <div class="view-container">
         <div ng-view class="view-frame"></div>
     </div>
@@ -41,7 +50,7 @@ Raidziu kiekis {{raides.length}}
 <script src="jslib/angular-route.js"></script>
 <script src="jslib/foundation.min.js"></script>
 <script src="index.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.3/angular-resource.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.1.4/angular-resource.min.js"></script>
 <script src="https://cdn.firebase.com/v0/firebase.js"></script>
 <script src="http://firebase.github.io/angularFire/angularFire.js"></script>
 <script src="views/home.js"></script>

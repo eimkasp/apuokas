@@ -1,25 +1,32 @@
 apuokasApp.controller('homeCtrl', ['$scope', function ($scope) {
-    $scope.zodziai = [
-        {'name': 'mama',
-            'raides': ['m', 'a', 'm', 'a'],
-            'sudetingumas': 1
-        },
-        {'name': 'Ž',
-            'raides': ['m', '8', 'm', 'a'],
-            'sudetingumas': 2
-        },
-        {'name': 'Us',
-            'raides': ['m', '2', 'm', 'a'],
-            'sudetingumas': 1
-        },
-        {'name': 'B',
-            'raides': ['m', 'b', 'm', 'a'],
-            'sudetingumas': 1
-        }
-    ];
+    var json = {
+        "modules":
+            [
+                {
+                    "zodis":"mama",
+                    "raides":[{"id":0, "title":"m"},
+                        {"id":1, "title":"a"},
+                        {"id":2, "title":"m"},
+                        {"id":3, "title":"a"}]
+                },
 
+                {
+                    "zodis":"tetis",
+                    "raides":[{"id":0, "title":"t"},
+                        {"id":1,"title":"e"},
+                        {"id":2,"title":"t"},
+                        {"id":3,"title":"i"},
+                        {"id":4,"title":"s"},
 
-    $scope.orderProp = 'sudetingumas';
+                    ]
+                }
+            ]
+    };
+
+    $scope.ocw = json;
+
+//    $scope.main = zodziai;
+//    $scope.orderProp = 'sudetingumas';
     $scope.hello = "Hello, world";
    // console.log($scope.zodziai[0].raide);
 }]);
