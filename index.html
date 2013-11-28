@@ -19,33 +19,7 @@
 </header>
 <div class="row">
     <div>{{hello}}</div>
-    <div>Filtruoti: <input ng-model="query"></div>
-    <div class="filter">
-        Rikiuoti:
-        <select ng-model="filtras">
-            <option value="zodis.zodis">Alphabetical</option>
-            <option value="zodynas.irasai.length">ilgiausias</option>
-        </select>
-    </div>
-
-    <div>
-        zodziu kiekis: {{zodynas.irasai.length}}
-    </div>
-    <div class="row">
-        <ul class="" ng-repeat="zodziai in zodynas.irasai | filter: query |orderBy: filtras">
-            <li>
-                <ul>
-                    <li ng-repeat="zodis in zodziai.zodis">
-                        <h4>{{zodis}}</h4>
-                    </li>
-                </ul>
-            </li>
-
-            </ul>
-            <div class="view-container">
-                <div ng-view class="view-frame"></div>
-            </div>
-    </div>
+<div ng-view></div>
 </div>
 <script src="jslib/jquery.js"></script>
 <script src="jslib/angular.js"></script>
@@ -56,7 +30,7 @@
 <script src="https://cdn.firebase.com/v0/firebase.js"></script>
 <script src="http://firebase.github.io/angularFire/angularFire.js"></script>
 <script src="views/home.js"></script>
-<!--<script src="views/project.js"></script>-->
+<script src="views/list.js"></script>
 <script>
     $(document).foundation();
 </script>

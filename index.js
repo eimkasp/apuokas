@@ -7,8 +7,12 @@ apuokasApp.config(['$routeProvider',
                 templateUrl: 'views/home.html',
                 controller: 'homeCtrl'
             }).
+            when('/list', {
+                templateUrl: 'views/list.html',
+                controller: 'listCtrl'
+            }).
             otherwise({
-                redirectTo: '/list'
+                redirectTo: '/home'
             });
     }]);
 
