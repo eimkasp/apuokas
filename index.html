@@ -15,36 +15,32 @@
         </div>
     </div>
 </header>
-{{hello}}
-Search: <input ng-model="query">
-Sort by:
-<select ng-model="orderProp">
-    <option value="name">Alphabetical</option>
-    <option value="age">Newest</option>
-</select>
-<ul>
-</ul>
-Raidziu kiekis {{modules.length}}
 <div class="row">
-    <table class="table table-bordered" ng-repeat="module in ocw.modules">
-        <tr>
-            <td>
-                <h3 class="moduletitle">{{ module.title }}</h3>
-                <h4>Zodis</h4>
-                <p>{{ module.zodis }}</p>
-            </td>
-        </tr>
-        <tr ng-repeat="week in module.raides">
-            <td>
-                {{ week.title }}
-            </td>
-        </tr>
-    </table>
-    <div class="view-container">
-        <div ng-view class="view-frame"></div>
+    {{hello}}
+    Search: <input ng-model="query">
+    Sort by:
+    <select ng-model="filtras">
+        <option value="zodis.zodis">Alphabetical</option>
+        <option value="zodynas.irasai.length">ilgiausias</option>
+    </select>
+
+    zodziu kiekis {{zodynas.modules.length}}
+    <div class="row">
+        <ul class="" ng-repeat="zodziai in zodynas.irasai | filter: query |orderBy: filtras">
+            <li>
+                <ul>
+                    <li ng-repeat="zodis in zodziai.zodis">
+                        <h4>{{zodis}}</h4>
+                    </li>
+                </ul>
+            </li>
+
+            </ul>
+            <div class="view-container">
+                <div ng-view class="view-frame"></div>
+            </div>
     </div>
 </div>
-
 <script src="jslib/jquery.js"></script>
 <script src="jslib/angular.js"></script>
 <script src="jslib/angular-route.js"></script>
