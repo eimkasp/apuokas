@@ -1,4 +1,4 @@
-var apuokasApp = angular.module('apuokasApp', ['ngRoute', 'apuokasAppCtrl']);
+var apuokasApp = angular.module('apuokasApp', ['ngRoute', 'apuokasAppCtrl', 'ngDragDrop']);
 
 apuokasApp.config(['$routeProvider',
     function($routeProvider) {
