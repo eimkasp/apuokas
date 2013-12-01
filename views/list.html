@@ -1,0 +1,27 @@
+<div class="wrap">
+    <div>
+        Filtruoti: <input ng-model="query">
+    </div>
+    <div class="filter">
+        Rikiuoti:
+        <select ng-model="filtras">
+            <option value="zodis.zodis">Alphabetical</option>
+            <option value="zodynas.irasai.length">ilgiausias</option>
+        </select>
+    </div>
+    <div>
+        Zodziu kiekis: {{zodynas.irasai.length}}
+    </div>
+    <div class="row word_list">
+        <ul class="" ng-repeat="zodziai in zodynas.irasai | filter: query |orderBy: filtras">
+            <li>
+                <ul>
+                    <li class="word_expand" ng-repeat="zodis in zodziai.zodis" ng-click="showDetails = ! showDetails" >
+                        <h4>{{zodis}}</h4>
+                        <div class="expandable" ng-show="showDetails" ng-repeat="raide in zodis">{{raide}}</div>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>

@@ -1,0 +1,18 @@
+.filter {
+    width: 100%;
+    float: left;
+    clear: both;
+}
+
+.filter select {
+    width: 20%;
+
+}
+
+.word_list {
+    width: 100%;
+    float: left;
+}
+
+.expandable {
+}
