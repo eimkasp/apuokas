@@ -6,7 +6,6 @@
 
 .filter select {
     width: 20%;
-
 }
 
 .word_list {
@@ -15,4 +14,22 @@
 }
 
 .expandable {
+}
+
+.dragContainer {
+    width: 40px;
+    height:40px;
+    padding:4px;
+    background: darkred;
+    margin: 10px;
+    float:left;
+}
+
+.drag {
+    padding:4px;
+    background: red;
+}
+
+.clr {
+    clear: both;
 }
