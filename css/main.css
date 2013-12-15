@@ -30,6 +30,11 @@
     background: red;
 }
 
+.transparent {
+    padding:4px;
+    background: transparent;
+}
+
 .clr {
     clear: both;
 }

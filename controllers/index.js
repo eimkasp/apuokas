@@ -11,9 +11,13 @@ apuokasApp.config(['$routeProvider',
                 templateUrl: 'views/list.html',
                 controller: 'listCtrl'
             }).
+            when('/mode1Levels', {
+                templateUrl: 'views/mode1Levels.html',
+                controller: 'mode1Ctrl'
+            }).
             when('/mode1', {
                 templateUrl: 'views/mode1.html',
-                controller: 'oneCtrl'
+                controller: 'mode1LevelsCtrl'
             }).
             otherwise({
                 redirectTo: '/home'
@@ -23,3 +27,21 @@ apuokasApp.config(['$routeProvider',
 var apuokasAppCtrl = angular.module('apuokasAppCtrl', [], function(){
 });
 
+apuokasApp.factory('chooseLevel', function () {
+    var levels = [];
+    var index;
+    return {
+        setLevels:function (data) {
+            levels = data;
+        },
+        getLevels:function () {
+            return levels;
+        },
+        setIndex:function (data) {
+            index = data;
+        },
+        getIndex:function () {
+            return index;
+        }
+    };
+});

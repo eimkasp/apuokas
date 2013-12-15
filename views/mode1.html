@@ -1,22 +1,31 @@
-<div ng-controller="oneCtrl">
+<div ng-controller="mode1Ctrl">
 
-    <div ng-repeat="zodziai in zodynas.irasai">
-        <div ng-repeat="raide in zodziai.raides" ng-switch="raide.empty">
-            <div ng-switch-when="true" class="dragContainer" data-drop="true" jqyoui-droppable="{index: {{$index}}}" ng-model="zodis"></div>
-            <div ng-switch-when="false" class="dragContainer">
-                {{raide.pav}}
-            </div>
-        </div>
-        <div class="clr"></div>
-
-        <div ng-repeat="raide in zodziai.trukstamosRaides" class="dragContainer" data-drop="false" jqyoui-droppable="{index: {{$index}}}" ng-model="zodis">
-            <div class="drag" data-drag="true" data-jqyoui-options="{revert: 'invalid'}" jqyoui-draggable="{index: {{$index}}, placeholder:true,animate:true}" ng-model="zodis">
+    <div ng-repeat="raide in zodis.raides" ng-switch="raide.empty">
+        <div ng-switch-when="true" class="btn btn-droppable" style="width: 40px; height:40px; padding:4px; background: darkred; margin: 10px;" data-drop="true" jqyoui-droppable="{index: {{$index}}, onDrop:'dropCallback'}" ng-model="raide">
+            <div class="btn btn-info btn-draggable" data-drag="true" style="padding:4px; background: red;" data-jqyoui-options="{revert: 'invalid'}" jqyoui-draggable="{index: {{$index}}, placeholder:true,animate:true}" ng-model="raide">
                 {{raide.pav}}
             </div>
         </div>
 
-        <div class="clr"></div>
-
+        <div ng-switch-when="false" class="btn btn-droppable" style="width: 40px; height:40px; padding:4px; background: darkred; margin: 10px;">
+            <div class="btn btn-info btn-draggable" style="padding:4px; background: red;">
+                {{raide.pav}}
+            </div>
+        </div>
     </div>
-    <div class="clr"></div>
+
+    <div ng-repeat="raide2 in zodis.trukstamosRaides" class="btn btn-droppable" style="width: 40px; height:40px; padding:4px; background: darkred; margin: 10px;" data-drop="true" jqyoui-droppable="{index: {{$index}}}" ng-model="raide2">
+        <div id="{{$index}}" class="btn btn-info btn-draggable" data-drag="true" style="padding:4px; background: red;" data-jqyoui-options="{revert: 'invalid'}" jqyoui-draggable="{index: {{$index}}, placeholder:true,animate:true}" ng-model="raide2">
+            {{raide2.pav}}
+        </div>
+    </div>
+
+    <div ng-show="lose">
+        {{zodis.taisykle}}
+    </div>
+
+    <div ng-show="win">
+        <button ng-click="quit()">Iseiti</button>
+        <button ng-click="goToNextLevel()">Eiti i kita lygi</button>
+    </div>
 </div>
