@@ -1,0 +1,31 @@
+﻿<div data-ng-controller="mode1Ctrl">
+
+    <div data-ng-repeat="raide in zodis.raides" data-ng-switch="raide.empty">
+        <div data-ng-switch-when="true" class="btn btn-droppable" style="width: 40px; height:40px; padding:4px; background: darkred; margin: 10px;" data-drop="true" data-jqyoui-droppable="{index: {{$index}}, onDrop:'dropCallback'}" data-ng-model="raide">
+            <div class="btn btn-info btn-draggable" data-drag="true" style="padding:4px; background: red;" data-jqyoui-options="{revert: 'invalid'}" data-jqyoui-draggable="{index: {{$index}}, placeholder:true,animate:true}" data-ng-model="raide">
+                {{raide.pav}}
+            </div>
+        </div>
+
+        <div data-ng-switch-when="false" class="btn btn-droppable" style="width: 40px; height:40px; padding:4px; background: darkred; margin: 10px;">
+            <div class="btn btn-info btn-draggable" style="padding:4px; background: red;">
+                {{raide.pav}}
+            </div>
+        </div>
+    </div>
+
+    <div data-ng-click="logg('parent')" data-ng-repeat="raide2 in zodis.trukstamosRaides" class="btn btn-droppable" style="width: 40px; height:40px; z-index:9998; padding:4px; background: darkred; margin: 10px;" data-drop="true" data-jqyoui-droppable="{index: {{$index}}}" data-ng-model="raide2">
+        <div data-ng-click="logg('norm')" id="{{$index}}" class="btn btn-info btn-draggable" data-drag="true" style="padding:4px; z-index:9999; background: red;" data-jqyoui-options="{revert: 'invalid'}" data-jqyoui-draggable="{index: {{$index}}, placeholder:true,animate:true}" data-ng-model="raide2">
+            {{raide2.pav}}
+        </div>
+    </div>
+
+    <div data-ng-show="lose">
+        {{zodis.taisykle}}
+    </div>
+
+    <div data-ng-show="win">
+        <button data-ng-click="quit()">Iseiti</button>
+        <button data-ng-click="goToNextLevel()">Eiti i kita lygi</button>
+    </div>
+</div>

@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>ROKAS-PC</Machine>
+    <WindowsUser>Rokas</WindowsUser>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <RegisteredManifestChecksum>22EDB03860C770E61957D1AE2031EC5900C3A83943E22A4C3531051B2CAFB5F3</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>b0673400-ccea-4a06-9edc-ac408d8959a4_1.0.0.0_neutral__qx3222agaqwvp</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>b0673400-ccea-4a06-9edc-ac408d8959a4_qx3222agaqwvp!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>b0673400-ccea-4a06-9edc-ac408d8959a4</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=Rokas</RegisteredPackagePublisher>
+    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\Rokas\Desktop\ApuokasAppW8\ApuokasAppW8\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-12-16T19:07:40.239</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\Rokas\Desktop\ApuokasAppW8\ApuokasAppW8\data\mode1LevelData.json">
+      <PackagePath>data\mode1LevelData.json</PackagePath>
+      <Modified>2013-12-15T23:33:42.374</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Rokas\Desktop\ApuokasAppW8\ApuokasAppW8\default.html">
+      <PackagePath>default.html</PackagePath>
+      <Modified>2013-12-16T19:30:08.405</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Rokas\Desktop\ApuokasAppW8\ApuokasAppW8\home.html">
+      <PackagePath>home.html</PackagePath>
+      <Modified>2013-12-16T18:58:06.125</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Rokas\Desktop\ApuokasAppW8\ApuokasAppW8\mode1.html">
+      <PackagePath>mode1.html</PackagePath>
+      <Modified>2013-12-16T19:34:33.174</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Rokas\Desktop\ApuokasAppW8\ApuokasAppW8\mode1levels.html">
+      <PackagePath>mode1levels.html</PackagePath>
+      <Modified>2013-12-16T18:58:52.815</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Rokas\Desktop\ApuokasAppW8\ApuokasAppW8\images\logo.png">
+      <PackagePath>images\logo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2012-07-26T18:30:08.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Rokas\Desktop\ApuokasAppW8\ApuokasAppW8\images\smalllogo.png">
+      <PackagePath>images\smalllogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2012-07-26T18:30:08.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Rokas\Desktop\ApuokasAppW8\ApuokasAppW8\images\splashscreen.png">
+      <PackagePath>images\splashscreen.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2012-07-26T18:30:08.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Rokas\Desktop\ApuokasAppW8\ApuokasAppW8\images\storelogo.png">
+      <PackagePath>images\storelogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2012-07-26T18:30:08.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Rokas\Desktop\ApuokasAppW8\ApuokasAppW8\js\angular-route.js">
+      <PackagePath>js\angular-route.js</PackagePath>
+      <Modified>2013-12-16T18:57:11.481</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Rokas\Desktop\ApuokasAppW8\ApuokasAppW8\js\angular.js">
+      <PackagePath>js\angular.js</PackagePath>
+      <Modified>2013-12-16T18:57:46.215</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Rokas\Desktop\ApuokasAppW8\ApuokasAppW8\js\default.js">
+      <PackagePath>js\default.js</PackagePath>
+      <Modified>2013-12-16T19:35:06.264</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Rokas\Desktop\ApuokasAppW8\ApuokasAppW8\js\jquery-ui.js">
+      <PackagePath>js\jquery-ui.js</PackagePath>
+      <Modified>2013-12-16T19:16:53.592</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Rokas\Desktop\ApuokasAppW8\ApuokasAppW8\js\jquery.js">
+      <PackagePath>js\jquery.js</PackagePath>
+      <Modified>2013-12-16T19:16:38.301</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Rokas\Desktop\ApuokasAppW8\ApuokasAppW8\css\default.css">
+      <PackagePath>css\default.css</PackagePath>
+      <Modified>2012-07-26T18:30:08.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Rokas\Desktop\ApuokasAppW8\ApuokasAppW8\bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2013-12-16T19:07:40.193</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.0\ExtensionSDKs\Microsoft.WinJS.1.0\1.0\">
+      <Name>Microsoft.WinJS.1.0</Name>
+      <Version>1.0.8514.0</Version>
+      <Architecture>Neutral</Architecture>
+      <FrameworkIdentity>Name=Microsoft.WinJS.1.0, MinVersion=1.0.8514.0</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.0\ExtensionSDKs\Microsoft.WinJS.1.0\1.0\Microsoft.WinJS.1.0.appx</AppxLocation>
+    </ResolvedSDKReference>
+  </ItemGroup>
+</Project>
